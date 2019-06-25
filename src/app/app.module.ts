@@ -13,6 +13,7 @@ import { MenuComponent } from './menu/menu.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { FormscontrolComponent } from './formscontrol/formscontrol.component';
+import{MatMomentDateModule} from '@angular/material-moment-adapter';
 
 import {
   MatButtonModule,
@@ -27,7 +28,10 @@ import {
   MatAutocompleteModule,
   MatSlideToggleModule,
   MatRadioModule,
-  MatCardModule} from '@angular/material';
+  MatCardModule,
+  MatDatepickerModule,
+  } from '@angular/material';
+  
 
 
 
@@ -59,6 +63,8 @@ import {
     MatSlideToggleModule,
     MatRadioModule,
     MatCardModule,
+    MatDatepickerModule,
+    MatMomentDateModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'menu', component: MenuComponent },
@@ -75,7 +81,9 @@ import {
     MatInputModule,
     MatSlideToggleModule,
     MatRadioModule,
-    MatCardModule
+    MatCardModule,
+    MatDatepickerModule,
+    MatMomentDateModule
      ],
   providers: [],
   bootstrap: [AppComponent]
